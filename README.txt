@@ -7,11 +7,12 @@ See http://www.latex-project.org/lppl.txt
 
 I. OVERVIEW
 
-The questiontex package allows to write multiple choice tests in LaTeX.
-The LaTeX sources can then be processed in order to produce a printer's
-copy, standard solution and interactive classroom assessment tests.
-Furthermore, the questions may be imported into the Moodle Learning
-Management System.
+The questiontex package contains a collection of LaTeX macros for writing
+multiple choice tests. The LaTeX sources can be processed by 'latex' in
+order to produce a printer's copy and standard solution.
+Interactive versions are obtained through import into the Moodle Learning
+Management System via a dedicated plugin or through in-house software
+for classroom assessment tests developed at ETH Zurich.
 
 ========================================================================
 
