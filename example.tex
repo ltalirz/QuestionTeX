@@ -1,28 +1,30 @@
-\documentclass{article}                  % use any documentclass you like
-\usepackage{graphicx,amssymb}            % use any packages you like
-\usepackage{questiontex}                 % include the questiontex package
+\documentclass{article}               % use any documentclass you like
+\usepackage{graphicx,amssymb}         % use any packages you like
+\usepackage{questiontex}              % include the questiontex package
 
-                                         % you can include any and all macros
-                                         % of your own (except for Moodle import)
+                                      % you may include macros of your own
+                                      % (but limits apply for Moodle import)
 \begin{document}
 
-%\hidesolution                           % uncomment this line to hide solution
-                                         % and produce printer's copy
+%\hidesolution                        % uncomment this line to hide solution
+                                      % and produce printer's copy of the test
 
 \intro{%
-    \noindent An intro for the test. Write anything you want in here.
+    \noindent 
+    An intro for the multiple-choice test. Write anything you want here.
     \bigskip\hrule\bigskip
 }
 
 % 1. Hello, world!
 
-\question{This is not a question.}
+\question{Our first question.}
 \true{A true answer.}
-\feedback{The feedback for the true answer.}
+\feedback{Feedback for those who selected this correct answer (optional).}
 \false{A false answer.}
-\feedback{The feedback for the false answer.}
+\feedback{Feedback for those who selected this incorrect answer (optional).}
 \true{Feedbacks are optional.}
-\explanation{Your explanation here. Explanations are optional.}
+\explanation{Explanation of how to arrive at the correct solution.
+  Explanations are optional.}
 
 % 2. LaTeX support
 
@@ -37,8 +39,8 @@ Labels and references.%
     $$\prod_{p\in{\bf \mathbb{P}}}\frac{1}{1-\frac{1}{p^2}}=\frac{\pi^2}{6}$$
 }
 \true{%
-    If you plan on importing to Moodle, write plain text and use LaTeX only in math mode.
-    We are sorry, but Moodle's filters only handle math mode.
+    If you plan on importing to Moodle, write plain text and use LaTeX only in
+    math mode.  We are sorry, but Moodle's filters only handle math mode.
 }
 
 
@@ -47,12 +49,13 @@ Labels and references.%
 \question{%
     Why bother with feedbacks and explanations, when they're optional?
 }
-\false{%
-    Exactly. I never do anything optional. That's why it's optional, right?
+\false{Feedbacks are just unnecessary effort.}
+\feedback{%
+    Immediate feedback is one of the great strengths of interactive
+    multiple-choice tests.
 }
 \true{%
-    We encourage you to make deliberate use of feedbacks and explanations.
-Your students will be grateful for your efforts.
+    Your students will appreciate your efforts.
 }
 
 %% 4. How to use images
