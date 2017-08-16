@@ -13,11 +13,12 @@ See http://www.latex-project.org/lppl.txt
 
 I. OVERVIEW
 
-The questiontex package allows to write multiple choice tests in LaTeX.
-The LaTeX sources can then be processed in order to produce a printer's 
-copy, standard solution and interactive classroom assessment tests.
-Furthermore, the questions may be imported into the Moodle Learning
-Management System.
+The questiontex package contains a collection of LaTeX macros for writing
+multiple choice tests. The LaTeX sources can be processed by 'latex' in 
+order to produce a printer's copy and standard solution. 
+Interactive versions are obtained through import into the Moodle Learning 
+Management System via a dedicated plugin or through in-house software 
+for classroom assessment tests developed at ETH Zurich.
 
 ========================================================================
 
@@ -150,7 +151,7 @@ project nemesis, ETH Zurich <echo@math.ethz.ch>
 % \GetFileInfo{\jobname.sty}
 %
 % \title{The \textsf{questiontex} package\thanks{This document
-% corresponds to \textsf{questiontex} version~\fileversion,
+% corresponds to \textsf{questiontex}~\fileversion,
 % dated \filedate.}}
 % \author{Project nemesis, ETH Zurich \\ \texttt{echo@math.ethz.ch}}
 % \date{Released \filedate}
@@ -166,15 +167,15 @@ project nemesis, ETH Zurich <echo@math.ethz.ch>
 %  The \LaTeX\ sources can be processed by \verb|latex| in order to produce a 
 %  printer's copy and standard solution. Interactive versions are 
 %  obtained through import into the 
-%  \href{https://moodle.org/}{Moodle Learming Management System} via 
+%  \href{https://moodle.org/}{Moodle Learning Management System} via 
 %  a \href{https://moodle.org/plugins/qformat_qtex}{dedicated plugin}
 %  or through in-house software for classroom assessment tests
 %  developed at ETH Zurich.
 % \end{abstract}
 %
 % \tableofcontents
-% \PrintChanges
 % \pagebreak
+% \PrintChanges
 % 
 % \section{Introduction}
 % Question\TeX\ is a collection of \LaTeX\ macros that enables authors to
